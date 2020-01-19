@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Experiance;
-use App\Project;
-use App\Skill;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class HomeController extends Controller
+class PortfolioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,14 +15,7 @@ class HomeController extends Controller
     public function index()
     {
         //
-
-        $projects = Project::join('programming_language', 'project.type_id', '=', 'programming_language.id')->select('*', 'programming_language.title as type', 'project.title as title')->get();
-        $skills = Skill::all();
-        $experiance = Experiance::all();
-
-        return view('index', compact('projects', 'skills', 'experiance'));
-
-
+        return view('index__portfolio');
     }
 
     /**

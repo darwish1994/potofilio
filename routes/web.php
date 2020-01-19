@@ -13,9 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/home', function () {
-    return view('index__app');
-});
+Route::get('/portfolio', "PortfolioController@index");
 
 
 Route::group(['prefix' => 'admin'], function () {

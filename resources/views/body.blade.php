@@ -56,14 +56,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Creative</a>
                             </li>
+                            {{--                            <li class="nav-item">--}}
+                            {{--                                <a class="nav-link" href="index__app.html">App</a>--}}
+                            {{--                            </li>--}}
+                            {{--                            <li class="nav-item">--}}
+                            {{--                                <a class="nav-link" href="index__freelancer.html">Freelancer</a>--}}
+                            {{--                            </li>--}}
                             <li class="nav-item">
-                                <a class="nav-link" href="index__app.html">App</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index__freelancer.html">Freelancer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index__portfolio.html">Portfolio</a>
+                                <a class="nav-link" href="{{url("portfolio")}}">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="index__slider.html">Slider</a>
